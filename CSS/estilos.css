@@ -1,0 +1,197 @@
+/*
+    paleta colores
+    negro: #0a0a12;
+    negro-suave: #12121f;
+    azul-oscuro: #14143a;
+    azul: #3b82f6;
+    azul-claro: #60a5fa;
+    morado-oscuro: #3b0764;
+    morado: #7c3aed;
+    morado-claro: #a78bfa;
+    texto: #d9d9ec;
+*/
+
+html {
+    scroll-padding-top: 70px;
+}
+
+
+body {
+    background-color: #0a0a12;
+    color: #d9d9ec;
+}
+
+/* ---- Header ---- */
+header.navbar {
+    background: linear-gradient(90deg, #0a0a12 0%, #14143a 60%, #3b0764 100%);
+    border-bottom: 2px solid #7c3aed;
+}
+
+.logotipo {
+    height: 40px;
+    width: auto;
+}
+
+.navbar-brand {
+    color: #a78bfa;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    color: #60a5fa;
+}
+
+.nav-link {
+    color: #d9d9ec;
+}
+
+.nav-link:hover {
+    color: #60a5fa;
+}
+
+/* ===== Sobre mí ===== */
+#sobre-mi {
+    color: #d9d9ec;
+}
+
+#sobre-mi h1 {
+    color: #a78bfa;
+}
+
+#sobre-mi img {
+    border-color: #7c3aed !important;
+    border-radius: 80px;
+}
+
+/* --- Proyectos --- */
+#proyectos h1 {
+    color: #60a5fa;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background-color: #12121f;
+    border: 1px solid #14143a;
+    color: #d9d9ec;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #7c3aed;
+    box-shadow: 0 0 18px rgba(124, 58, 237, 0.45);
+}
+
+.card-title {
+    color: #a78bfa;
+}
+
+/* --- Botones --- */
+.btn-primary {
+    background-color: #7c3aed;
+    border-color: #7c3aed;
+    color: #fff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #3b82f6;
+    border-color: #3b82f6;
+    color: #fff;
+}
+
+/* --- Contacto --- */
+#contacto {
+    background: linear-gradient(135deg, #14143a 0%, #3b0764 100%);
+    color: #fff;
+    border-top: 2px solid #7c3aed;
+}
+
+#contacto h1 {
+    color: #60a5fa;
+}
+
+#contacto .fw-bold {
+    color: #a78bfa;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #0a0a12;
+    color: #60a5fa;
+    border-top: 2px solid #7c3aed;
+}
+
+#proyectos img{
+    height: 320px;
+
+}
+
+.icono {
+    font-size: 2.5rem;
+    color: #60a5fa;
+    margin-bottom: 0.5rem;
+}
+
+.linea-acento {
+    width: 40px;
+    border-top: 3px solid #7c3aed;
+    opacity: 1;
+}
+
+.linea-mini {
+    width: 30px;
+    border-top: 1px solid #d9d9ec;
+}
+
+.espacio-imagen {
+    height: 20rem;
+    width: 15rem;
+    border: 2px dashed #7c3aed;
+    color: #a78bfa;
+}
+
+.seccion-about {
+    background-color: #12121f;
+}
+
+.seccion-about h3 {
+    color: #a78bfa;
+}
+
+/* Servicios */
+.seccion-servicios {
+    background-color: #0a0a12;
+}
+
+.seccion-servicios .nav-link {
+    color: #d9d9ec;
+    border-bottom: 1px solid #14143a;
+    border-radius: 0;
+}
+
+.seccion-servicios .nav-link.active {
+    color: #a78bfa;
+    background: none;
+    border-bottom: 1px solid #7c3aed;
+}
+
+.seccion-servicios .icono {
+    color: #a78bfa;
+    font-size: 2rem;
+    width: 3.5rem;
+}
+
+.servicios-imagen {
+    min-height: 25rem;
+    background-image: linear-gradient(135deg, #14143a, #3b0764);
+    background-size: cover;
+    background-position: center;
+}
+
+.favoritos-capa {
+    height: 100%;
+    background-color: rgba(10, 10, 18, 0.45);
+    color: #fff;
+}

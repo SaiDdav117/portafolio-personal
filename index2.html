@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="shortcut icon" href="iconos/favicon.ico" type="image/x-icon">
+    <title>Portafolio</title>
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg bg-success py-0 navbar-dark fixed-top">
+        <nav class="container-fluid">
+
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/SHalo3.png" alt="Logo" class="d-inline-block align-text-middle logotipo">
+                Portafolio personal
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                   <a class="nav-link" href="index.html">Sobre mí</a>
+                     <a class="nav-link" href="index.html #acerca-de">Acerca de</a>
+                    <a class="nav-link" href="index.html #proyectos">Proyectos</a>
+                    <a class="nav-link" href="index.html #Datos inecesarios">Datos inecesarios</a>
+                    <a class="nav-link" href="index.html #favoritos">favoritos</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="bg-primary text-center text-white py-5">
+        <article class="container">
+            <h1 class="display-4 fw-bold">Contacto</h1>
+            <p><span class="fw-bold">Correo:</span> saiddavalos77254@gmail.com</p>
+            <p><span class="fw-bold">LinkedIn:</span> Nah mentira, no tengo LinkedIn. Alguien sigue usandolo?</p>
+            <p><span class="fw-bold">GitHub:</span> <a href="https://github.com/SaiDdav117">github.com/SaiDdav117</a></p>
+        </article>
+
+         <article id="glass_estilo">
+            <h2 class="titulo">Necesitas consultar o preguntar algo?</h2>
+            <form action="">
+                <input type="text" placeholder="Nombre">
+                <input type="email" required placeholder="Correo electronico">
+                <input type="text" placeholder="Telefono">
+                <div>
+                    <textarea style="width: 50%; height: 200px; margin-top: 30px;" name="Mensaje" id="cuadroTxt" placeholder="Mensaje"></textarea>
+                </div>
+            
+                
+                <input class="bg-danger" type="submit" value="Guardar">
+            </form>
+        </article>
+
+    </section>
+
+    <section>
+        <h1 class="display-4 fw-bold, text-center text-bg-primary pb-3 d-none d-lg-block">La xbox Ubicacion</h1>
+    <iframe id="Mapa" class="w-100"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10296.310051290784!2d-89.00537856858061!3d20.199546992625635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f57246c3bac839b%3A0xecd6094a12fa92b6!2s97957%20X-Box%2C%20Yuc.!5e0!3m2!1ses-419!2smx!4v1792084962206!5m2!1ses-419!2smx"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+
+
+    <footer class="container-fluid bg-black text-info text-center">
+        <p class="py-3">Copyright 2026 - Said Emiliano Sandoval Davalos</p>
+    </footer>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

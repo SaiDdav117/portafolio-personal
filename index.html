@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <link rel="shortcut icon" href="iconos/favicon.ico" type="image/x-icon">
+    <title>Portafolio</title>
+</head>
+
+<body>
+
+    <header class="navbar navbar-expand-lg bg-success py-0 navbar-dark fixed-top">
+        <nav class="container-fluid"> 
+
+            <a class="navbar-brand" href="#">
+                <img src="imagenes/SHalo3.png" alt="Logo" class="d-inline-block align-text-middle logotipo">
+                Portafolio personal
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                     <a class="nav-link" href="#acerca-de">Acerca de</a>
+                    <a class="nav-link" href="#proyectos">Proyectos</a>
+                    <a class="nav-link" href="#Datos inecesarios">Datos inecesarios</a>
+                    <a class="nav-link" href="#favoritos">favoritos</a>
+                   <a class="nav-link" href="index2.html">Contacto</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section style="background-image: url('imagenes/anillo.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;" id="sobre-mi" class="container py-5 my-5">
+        <div class="row">
+            <figure class="col-lg-6 col-md-10 offset-md-1 offset-lg-0">
+                <img src="imagenes/avatarxd.png" alt="Said Emiliano Sandoval Davalos"
+                    class="img-fluid border-start border-end border-2 border-warning">
+            </figure>
+            <article class="col-lg-6 col-md-10 offset-md-1 offset-lg-0 pt-md-5 text-center text-lg-end">
+                <h1 class="display-4 fw-bold text-danger text-lg-start fst-italic">Sobre mí</h1>
+                <div style="background-color: rgb(47, 79, 79, 0.5); padding: 15px; border-radius: 30px;">
+                <p>Hola, soy Said y este es mi portafolio personal</p>
+                <p>Soy un estudiante de la universidad tecnologica de leon, curso la especialidad de Desarrollo de Software Multiplataforma. Y pues ya, tu sigue bajando.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+ 
+    <!-- Acerca de -->
+<section id="acerca-de" class="container my-5 text-center">
+    <button id="modal" type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalSobreMi">
+        Conóceme un poco más
+    </button>
+
+    <script>
+    const sonidoClick = new Audio('sounds/videoplayback.m4a');
+    sonidoClick.volume = 0.6;
+
+    document.getElementById('modal').addEventListener('click', () => {
+        sonidoClick.currentTime = 0;
+        sonidoClick.play();
+    });
+</script>
+
+    <div class="modal fade" id="modalSobreMi" tabindex="-1" aria-labelledby="tituloModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="tituloModal">Un poco más sobre mí</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+
+                <div class="modal-body text-start">
+                    <img style="height: 25rem; width: 20rem;" src="imagenes/yo2.jpg" alt="Said Emiliano Sandoval Davalos" class="img-fluid rounded mb-3">
+                    <p>Mi nombre completo es Said Emiliano Sandoval Davalos, actualmente tengo 18 anios, y me gusta el helado de vainilla.</p>
+                    <p>Disfruto de jugar videojuegos, no he tenido la oportunidad de desarrollar un juego realmente, pero he tenido un breve acercamiento a ello, ya sea haciendo entornos virtuales, o creando modificaciones sencillas para ellos.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <a href="index2.html" class="btn btn-primary">Contactarme</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+<section class="container my-5">
+    <h2 style="color: orangered;" class="text-center fw-bold mb-4">video spooky AAA me asuste</h2>
+    <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+            <div class="ratio ratio-16x9">
+                <video controls preload="metadata" poster="imagenes/portada-video.jpg">
+                    <source src="video/oogaBooga.mp4" type="video/mp4">Video chistoson aaa me asuste
+                    
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+
+
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="container py-5">
+        <h1 class="display-4 fw-bold text-center text-info">Mis proyectos</h1>
+        <div class="row">
+
+            <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+                <div class="card">
+                    <img src="imagenes/calabaza.png" class="card-img-top" alt="Figura en html">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-start">Figura en html</h5>
+                        <p class="card-text">En esta actividad realizamos un personaje o figura de nuestro agrado con lo aprendido en la estructura basica. Yo hice una calabaza de minecraft porque es el mes spooky</p>
+                       <a href="https://github.com/SaiDdav117/LDSM407_Actividades/tree/main/Figura%20html" class="btn btn-primary">Ver proyecto</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+                <div class="card">
+                    <img src="imagenes/delight tex.png" class="card-img-top" alt="Proyecto entorno virtual">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-start"> Proyecto entorno virtual</h5>
+                        <p class="card-text">Esto fue un entorno virtual que hice con delight tex, trato de diseniar un entorno al gusto hablando sobre metas a futuro personales. En mi caso hice un entorno estilo silent hill utilizando modelos 3d, programacion con bloques y un poco de codigo.</p>
+                        <a href="https://nova.delightex.com/shared/ylfdnk" class="btn btn-primary">Ver proyecto</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="col-10 offset-1 col-md-6 offset-md-0 col-lg-4">
+                <div class="card">
+                    <img src="imagenes/figma.png" class="card-img-top" alt="Proyecto 3">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold text-start">Proyecto de figma</h5>
+                        <p class="card-text">Este fue un proyecto desarrollado en figma, trato de un maquetado de sitio web, que simulaba la interaccion de un usuario.</p>
+                        <a href="https://www.figma.com/proto/ScfhOgADNPHsexHTj8GWmP/Sin-t%C3%ADtulo?node-id=56-14&starting-point-node-id=56%3A14&scaling=contain&content-scaling=fixed" class="btn btn-primary">Ver proyecto</a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- Seccion extra 1 -->
+    <section id="Datos inecesarios" class="seccion-about py-5">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-9">
+                    <p class="text-uppercase mb-1">Datos inecesarios de la navidad porque se acerca</p>
+                    <h2 class="display-5 mb-0">Datos inecesarios</h2>
+                    <hr class="linea-acento mb-5">
+
+                    <div class="row">
+
+                        <article class="col-md-4">
+                            <p class="icono">❆</p>
+                            <h3 class="h5">Navidad ocurre en invierno</h3>
+                            <p>Por si no lo sabias, la navidad ocurre mayormente en el invierno. A excepcion del hemisferio sur.</p>
+                        </article>
+
+                        <article class="col-md-4">
+                            <p class="icono">𖢔</p>
+                            <h3 class="h5">En navidad se usan arboles con luces</h3>
+                            <p>Cientificos han reportado el avistamento de arboles adornados con luces durante estas fechas.</p>
+                        </article>
+
+                        <article class="col-md-4">
+                            <p class="icono">☆</p>
+                            <h3 class="h5">Es mi cumpleanios</h3>
+                            <p>cumplo en Diciembre... Y ya es todo.</p>
+                        </article>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-3 align-self-end text-center">
+                   <img src="imagenes/nabida.jpg" alt="Descripción" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- seccion extra 2 -->
+    <section id="favoritos" class="container-fluid p-0">
+        <div class="row g-0">
+
+            <div class="col-lg-6 p-5 seccion-servicios">
+
+                <ul class="nav mb-5" id="serviciosTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active text-uppercase" id="tab-diseno" data-bs-toggle="tab" data-bs-target="#panel-diseno" type="button" role="tab">Juegos</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link text-uppercase" id="tab-desarrollo" data-bs-toggle="tab" data-bs-target="#panel-desarrollo" type="button" role="tab">Peliculas</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content">
+
+                    <div class="tab-pane fade show active" id="panel-diseno" role="tabpanel">
+
+                        <div class="d-flex mb-5">
+                            <p class="icono me-4 flex-shrink-0">⏻</p>
+                            <div>
+                                <h3 class="h6 fw-bold">Red Dead Redemption 2</h3>
+                                <hr class="linea-mini">
+                                <p>"Creo que... Tengo miedo" Increible y emotiva historia, ademas de un mundo muy immersivo.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-5">
+                            <p class="icono me-4 flex-shrink-0">⏻</p>
+                            <div>
+                                <h3 class="h6 fw-bold">Resident evil 4</h3>
+                                <hr class="linea-mini">
+                                <p>"Hasta luego" Una gran combinacion entre accion y terror, de los primeros juegos de terror que he probado.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <p class="icono me-4 flex-shrink-0">⏻</p>
+                            <div>
+                                <h3 class="h6 fw-bold">Silent hill 2</h3>
+                                <hr class="linea-mini">
+                                <p>"En mis sueños más inquietos, veo esa ciudad. Silent Hill" Una gran atmosfera, historia y banda sonora me gusta lo distinto que es al juego de terror promedio.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="panel-desarrollo" role="tabpanel">
+
+                        <div class="d-flex mb-5">
+                            <p class="icono me-4 flex-shrink-0">⛃</p>
+                            <div>
+                                <h3 class="h6 fw-bold">Interstellar</h3>
+                                <hr class="linea-mini">
+                                <p>"No me dejes ir Murph" Gran banda sonora, efectos visuales y trama. planteo el como se ven los agujeros negros.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex mb-5">
+                            <p class="icono me-4 flex-shrink-0">⛃</p>
+                            <div>
+                                <h3 class="h6 fw-bold">Wall-E</h3>
+                                <hr class="linea-mini">
+                                <p>"Dame la planta" Mi pelicula animada favorita de la infancia y probablemente siga siendolo.</p>
+                            </div>
+                        </div>
+
+                        <div class="d-flex">
+                            <p class="icono me-4 flex-shrink-0">⛃</p>
+                            <div>
+                                <h3 class="h6 fw-bold">Iron man</h3>
+                                <hr class="linea-mini">
+                                <p>"Es mejor ser temido o respetado?" Pelicula que inicio el universo expandido de marvel, me gusta como cuenta el origen del superheroe que comenzo su universo cinematografico.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div style="background-image: url('imagenes/reddead.jpg')" class="col-lg-6 servicios-imagen">
+                <div class="favoritos-capa d-flex align-items-center">
+                    <div class="p-5">
+                        <h2 class="display-6 fw-bold">FAVORITOS</h2>
+                        <hr class="linea-mini">
+                        <p class="fs-5">Algunos de los juegos y peliculas que me han gustado.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <footer class="container-fluid bg-black text-info text-center">
+        <p class="py-3">Copyright 2026 - Said Emiliano Sandoval Davalos</p>
+    </footer>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
